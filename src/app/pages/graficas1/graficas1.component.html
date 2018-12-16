@@ -2,7 +2,10 @@
   <div class="col-6">
       <div class="card">
           <div class="card-body">
-            <app-grafico-dona></app-grafico-dona>
+            <app-grafico-dona leyenda="{{graficos.grafico1.leyenda}}" 
+                              [doughnutChartData1]="graficos.grafico1.data"
+                              [doughnutChartLabels1]="graficos.grafico1.labels" >
+           </app-grafico-dona>
           </div>
       </div>
   </div>
@@ -10,7 +13,10 @@
   <div class="col-6">
     <div class="card">
         <div class="card-body">
-          <app-grafico-dona></app-grafico-dona>
+          <app-grafico-dona leyenda="{{graficos.grafico2.leyenda}}" 
+                            [doughnutChartData1]="graficos.grafico2.data" 
+                            [doughnutChartLabels1]="graficos.grafico2.labels">
+          </app-grafico-dona>
         </div>
     </div>
 </div>
@@ -20,7 +26,10 @@
   <div class="col-6">
       <div class="card">
           <div class="card-body">
-            <app-grafico-dona></app-grafico-dona>
+            <app-grafico-dona leyenda="{{graficos.grafico3.leyenda}}" 
+                              [doughnutChartData1]="graficos.grafico3.data" 
+                              [doughnutChartLabels1]="graficos.grafico3.labels">
+            </app-grafico-dona>
           </div>
       </div>
   </div>
@@ -28,10 +37,16 @@
   <div class="col-6">
     <div class="card">
         <div class="card-body">
-          <app-grafico-dona></app-grafico-dona>
+          <app-grafico-dona leyenda="{{graficos.grafico4.leyenda}}" 
+                            [doughnutChartData1]="graficos.grafico4.data" 
+                            [doughnutChartLabels1]="graficos.grafico4.labels">
+          </app-grafico-dona>
         </div>
     </div>
 </div>
 </div>
 
+<!-- {{graficos.grafico1.data[2]}} -->
+
+<!-- <dir *ngFor="let item of graficos.grafico1.data">{{item}}</dir>  -->
 

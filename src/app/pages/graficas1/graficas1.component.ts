@@ -7,13 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Graficas1Component implements OnInit {
 
-    // Doughnut
-    // tslint:disable-next-line:whitespace
-    public doughnutChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-    // tslint:disable-next-line:whitespace
-    public doughnutChartData:number[] = [350, 450, 100];
-    public doughnutChartType = 'doughnut';
-
     graficos: any = {
       'grafico1': {
         'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
@@ -44,6 +37,7 @@ export class Graficas1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // console.log(this.graficos.grafico1.data[2]);
   }
 
 

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
 
@@ -40,7 +41,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     SharedModule,
     PAGES_ROUTES,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    BrowserModule
   ]
 })
 
