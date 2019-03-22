@@ -6,13 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class GraficoDonaComponent implements OnInit {
-
    // Doughnut
    // tslint:disable-next-line:whitespace
-   @Input() doughnutChartData1:number[];  
+   @Input() doughnutChartData1:number[];
    // tslint:disable-next-line:whitespace
    @Input() doughnutChartLabels1:string[];
-   public doughnutChartType1 ='doughnut';
+   public doughnutChartType1 = 'doughnut';
    @Input() leyenda;
 
   constructor() { }
